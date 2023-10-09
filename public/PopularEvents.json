@@ -1,20 +1,28 @@
 [
-      {
-        "id": 1,
-        "name": "Corporate Meetings",
-        "img_url": "https://i.ibb.co/5nnFhDv/banner-1.jpg",
-        "small_title": "Business Strategy",
-        "details": "Corporate meetings are vital gatherings of company executives, departments, or teams to discuss business strategies, goals, and operations. These meetings can be regular sessions or special events for decision-making, planning, and alignment. They provide a platform for sharing insights, setting priorities, and addressing challenges. Corporate meetings enable effective communication and coordination among stakeholders, leading to better decision outcomes and organizational success. Whether held in boardrooms, off-site venues, or virtually, corporate meetings play a crucial role in shaping a company's direction and ensuring everyone is on the same page.",
-        "amount": 1200,
-        "dataAos": "zoom-in"
-      },
-      {
-        "id": 2,
-        "name": "Award Ceremonies",
-        "img_url": "https://i.ibb.co/fXV1kCB/banner-2.jpg",
-        "small_title": "Recognition",
-        "details": "Award ceremonies are special events designed to recognize and honor outstanding achievements and contributions within an organization. Awards may be presented to employees, partners, or other stakeholders who have demonstrated excellence and dedication. These ceremonies celebrate success, inspire motivation, and foster a culture of appreciation. They boost employee morale, encourage healthy competition, and reinforce a sense of belonging. Award ceremonies can be formal affairs or casual gatherings, but they always serve as a powerful tool for acknowledging and appreciating the hard work and dedication of individuals and teams.",
-        "amount": 500,
-        "dataAos": "zoom-in"
-      }
+  {
+    "id": 1,
+    "name": "Conferences and Seminars",
+    "img_url": "https://i.ibb.co/5nnFhDv/banner-1.jpg",
+    "small_title": "Knowledge Sharing",
+    "details": "Conferences and seminars are gatherings of professionals for knowledge sharing. These events bring together experts and industry leaders to discuss, present, and exchange ideas. Attendees can expect to engage with keynote speakers, participate in panel discussions, and attend informative workshops. These events are invaluable for staying updated on industry trends and making important connections. Whether it's a large-scale conference or a specialized seminar, these events foster learning, collaboration, and networking in a dynamic environment.",
+    "amount": 1000,
+    "dataAos": "fade-down-right",
+    "location": "Conference Center A",
+    "manager_name": "Abdullah",
+    "mobile": "017xxxxxx",
+    "email": "xyz@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Trade Shows and Expos",
+    "img_url": "https://i.ibb.co/fXV1kCB/banner-2.jpg",
+    "small_title": "Product Showcase",
+    "details": "Trade shows and expos provide businesses with opportunities to showcase their products and services to a targeted audience. These events serve as platforms for companies to exhibit innovations, launch new products, and build brand visibility. Attendees can explore a wide range of offerings, network with industry professionals, and discover emerging trends. Trade shows and expos foster collaboration and facilitate valuable connections among participants. They play a crucial role in driving business growth, fostering partnerships, and staying competitive in the market.",
+    "amount": 1500,
+    "dataAos": "fade-down-right",
+    "location": "Conference Center B",
+    "manager_name": "Abdullah",
+    "mobile": "017xxxxxx",
+    "email": "xyz@gmail.com"
+  }
 ]
