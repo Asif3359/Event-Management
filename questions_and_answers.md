@@ -18,12 +18,11 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: The correct answer is B ?
+#### Answer: The correct answer is B: ReferenceError: greetign is not defined ?
 
-<i>Write your explanation here</i>
+<i><b> explanation here</b></i>
 <li>The code attempts to access a variable named "greetign," which is not defined.</li>
 <li>As a result, a ReferenceError is thrown because the variable "greetign" is not declared or assigned a value before being used.<li>
-
 </p>
 </details>
 
@@ -45,10 +44,11 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: The correct answer is D: 3.?
 
-<i>Write your explanation here</i>
-
+<i>explanation here</i>
+<li>The function "sum" attempts to add the values of its parameters "a" and "b."</li>
+<li>JavaScript implicitly converts the string "2" to a number when performing the addition, resulting in 1 + 2, which equals 3.</li>
 </p>
 </details>
 
@@ -71,10 +71,11 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: The correct answer is A: ['🍕', '🍫', '🥑', '🍔'].?
 
-<i>Write your explanation here</i>
-
+<i>explanation here</i>
+<li>The code modifies the "info.favoriteFood" property to "🍝," but it doesn't affect the "food" array.</li>
+<li>So, when you log the "food" array, it remains unchanged, and its contents are still ['🍕', '🍫', '🥑', '🍔'].</li>
 </p>
 </details>
 
