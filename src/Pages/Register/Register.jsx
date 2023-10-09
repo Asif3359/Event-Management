@@ -25,10 +25,10 @@ const Register = () => {
         // if(/^(?=.*[a-z])/.test(Password)){
         //     return setRegisterErrorMessage("don't have a capital letter")
         // }
-        if (/^(?=.*[A-Z])/.test(Password)) {
+        if (!/[A-Z]/.test(Password)) {
             return setRegisterErrorMessage("don't have a capital letter")
         }
-        if (/^(?=.*[@#$%^&!])/.test(Password)) {
+        if (!/[@#$%^&!]/.test(Password)) {
             return setRegisterErrorMessage(" don't have a special character")
         }
         createUser(Email, Password)

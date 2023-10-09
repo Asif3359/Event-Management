@@ -29,7 +29,7 @@ const NavBar = () => {
                         })
                         .catch(error => {
                             setLogOutError(error.message)
-                    })
+                        })
                 }
                 else {
                     swal("You are still logged in");
@@ -59,7 +59,7 @@ const NavBar = () => {
         {
             user
             &&
-            <li><NavLink className="rounded-full p-0 m-0 btn btn-circle btn-sm" to="/profile"><button><img className='rounded-full' src={user?.photoURL} alt="" /></button></NavLink ></li>
+            <li className='hidden lg:block'><NavLink className="rounded-full p-0 m-0 btn btn-circle btn-sm" to="/profile"><button><img className='rounded-full' src={user?.photoURL} alt="" /></button></NavLink ></li>
         }
         {
             user ? <li><Link onClick={handleSingOut}>logout</Link></li> : <li><NavLink to="/login">login</NavLink ></li>
@@ -69,9 +69,9 @@ const NavBar = () => {
         <div>
             <div className="navbar bg-base-100">
                 <div className="flex-1">
-                    <li className='list-none'><NavLink to="/" className="font-bold text-3xl">Corporate <span className='text-blue-500'>Nexus</span> Events</NavLink></li>
+                    <li className='list-none'><NavLink to="/" className="font-bold text-xl lg:text-3xl"><span className='hidden md:inline-block justify-start items-center'>Corporate</span> <span className='text-blue-500'>Nexus</span> Events</NavLink></li>
                 </div>
-                <div className="flex-none">
+                <div className="flex-o">
                     <ul className="menu hidden md:flex items-center justify-center  menu-horizontal px-1">
                         {
                             links
@@ -79,7 +79,7 @@ const NavBar = () => {
                     </ul>
                     <ul className="menu flex md:hidden items-center justify-center menu-horizontal px-1">
 
-                        <li><NavLink to="/profile">img</NavLink ></li>
+                        <li><NavLink className="rounded-full p-0 m-0 btn btn-circle btn-sm" to="/profile"><button><img className='rounded-full' src={user?.photoURL} alt="" /></button></NavLink ></li>
                         <li>
                             <details>
                                 <summary>
