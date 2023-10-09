@@ -11,7 +11,9 @@ const Service = ({ service }) => {
                 <div className="flex-1 relative overflow-hidden">
                     <img className="h-60 w-full rounded-lg" src={service.img_url} alt="" />
                     <div className="overflow-hidden rounded-lg w-full absolute bottom-0 bg-black opacity-0 group-hover:opacity-70 flex justify-start items-center transition-transform duration-300 transform translate-x-full group-hover:translate-x-0">
-                        <button className="btn my-5 mx-3 btn-primary group-hover:opacity-100">Buy Now</button>
+                        <Link to={`/events/${id}`}>
+                            <button className="btn my-5 mx-3 btn-primary group-hover:opacity-100">Buy Now</button>
+                        </Link>
                     </div>
                 </div>
                 <div className="flex-1 gap-2 flex flex-col justify-between px-2 py-3">
