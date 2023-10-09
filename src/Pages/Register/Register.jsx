@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../AuthProviders/AuthProvider';
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Register = () => {
 
     const [registerSuccessMessage, setRegisterSuccessMessage] = useState(null);
@@ -43,12 +44,32 @@ const Register = () => {
                         const errorCode = error.code;
                         console.log(errorCode);
                     })
-                setRegisterSuccessMessage("User Successfully logged in ");
-                navigate("/")
+                setRegisterSuccessMessage("User Successfully register ");
+                navigate(location?.state ? location.state : "/")
+                toast.success('User Successfully register', {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
 
             })
             .catch(error => {
-                setRegisterErrorMessage(error.message)
+                setRegisterErrorMessage(error.message);
+                toast.error('User could not register successfully', {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
             })
 
     }
@@ -60,12 +81,32 @@ const Register = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                setRegisterSuccessMessage("User Successfully logged in ");
+                setRegisterSuccessMessage("User Successfully login ");
                 navigate(location?.state ? location.state : "/");
+                toast.success('User Successfully login', {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
             })
             .catch(error => {
                 console.log(error.message);
                 setRegisterErrorMessage(error.message);
+                toast.error('User could not login successfully', {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
             })
     }
 

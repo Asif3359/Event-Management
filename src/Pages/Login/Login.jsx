@@ -1,15 +1,17 @@
 import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../AuthProviders/AuthProvider';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const [loginSuccessMessage, setLoginSuccessMessage] = useState(null);
     const [loginErrorMessage, setLoginErrorMessage] = useState(null);
-    const { socialLogIn,logInUser } = useContext(AuthContext)
+    const { socialLogIn, logInUser } = useContext(AuthContext)
     const location = useLocation();
     const navigate = useNavigate()
     const socialLoginWith = (googleLogIn) => {
-        
+
         setLoginSuccessMessage("");
         setLoginErrorMessage("");
 
@@ -19,35 +21,87 @@ const Login = () => {
                 console.log(user);
                 setLoginSuccessMessage("User Successfully logged in ");
                 navigate(location?.state ? location.state : "/");
+                toast.success('User Successfully logged in', {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
+
             })
             .catch(error => {
                 console.log(error.message);
                 setLoginErrorMessage(error.message)
+                toast.error('User could not login successfully', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
             })
     }
-    const handleLogIn =(e)=>{
+    const handleLogIn = (e) => {
         e.preventDefault();
         const Email = e.target.email.value;
         const Password = e.target.password.value;
-        console.log(Email , Password);
+        console.log(Email, Password);
 
         setLoginSuccessMessage("");
         setLoginErrorMessage("");
 
-        logInUser(Email,Password)
-            .then(result =>{
+        logInUser(Email, Password)
+            .then(result => {
                 const user = result.user;
                 console.log(user);
                 setLoginSuccessMessage("User Logged in Successfully");
-                navigate("/");
+                navigate(location?.state ? location.state : "/");
+                toast.success('User Successfully logged in', {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
+
             })
-            .catch(error =>{
+            .catch(error => {
                 const errorCoe = error.code;
-                if(errorCoe ==="auth/invalid-login-credentials"){
-                    setLoginErrorMessage("Invalid email or password")
+                if (errorCoe === "auth/invalid-login-credentials") {
+                    setLoginErrorMessage("Invalid email or password");
+                    toast.error('Invalid email ro password!', {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "light",
+                    });
                 }
-                else{
+                else {
                     setLoginErrorMessage(errorCoe);
+                    toast.error('Something went error !', {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "light",
+                    });
                 }
             })
     }
@@ -89,6 +143,7 @@ const Login = () => {
                                 <div className='border'></div>
                                 <div className='flex justify-start item-center'>
                                     <button onClick={() => socialLoginWith(socialLogIn)} className='btn btn-sm '>Google</button>
+
                                 </div>
                             </div>
                             {

@@ -64,7 +64,6 @@ const UpdateInfo = () => {
                                 <input onClick={handleToast} className='btn btn-sm btn-primary' type="submit" value="Submit" />
                             </div>
                         </form>
-                        <ToastContainer/>
                     </div>
                 }
             </div>
