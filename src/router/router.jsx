@@ -7,12 +7,13 @@ import Services from "../Pages/Services/Services";
 import Profile from "../Pages/Profile/Profile";
 import Events from "../Pages/Events/Events";
 import PrivateRout from "./PrivateRout";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
   const router = createBrowserRouter([
     {
       path: "/",
       element:<Root></Root>,
-      errorElement:<div>Sorry Brother</div>,
+      errorElement:<ErrorPage></ErrorPage>,
       children: [
         {
           path: "/",
