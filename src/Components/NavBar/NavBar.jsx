@@ -69,7 +69,7 @@ const NavBar = () => {
         <div>
             <div className="navbar bg-base-100">
                 <div className="flex-1">
-                    <li className='list-none'><NavLink to="/">Logo</NavLink></li>
+                    <li className='list-none'><NavLink to="/" className="font-bold text-3xl">Corporate <span className='text-blue-500'>Nexus</span> Events</NavLink></li>
                 </div>
                 <div className="flex-none">
                     <ul className="menu hidden md:flex items-center justify-center  menu-horizontal px-1">

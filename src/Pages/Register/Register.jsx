@@ -7,7 +7,7 @@ const Register = () => {
     const [registerSuccessMessage, setRegisterSuccessMessage] = useState(null);
     const [registerErrorMessage, setRegisterErrorMessage] = useState(null);
 
-    const { createUser, socialLogIn } = useContext(AuthContext)
+    const { createUser, socialLogIn, profile } = useContext(AuthContext)
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -18,30 +18,39 @@ const Register = () => {
         const Photo = e.target.photo.value;
         const Password = e.target.password.value;
         console.log(Name, Email, Photo, Password);
-        if(Password.length < 6 ){
+        if (Password.length < 6) {
             setRegisterErrorMessage("password is less than 6 characters")
             return;
         }
         // if(/^(?=.*[a-z])/.test(Password)){
         //     return setRegisterErrorMessage("don't have a capital letter")
         // }
-        if(/^(?=.*[A-Z])/.test(Password)){
+        if (/^(?=.*[A-Z])/.test(Password)) {
             return setRegisterErrorMessage("don't have a capital letter")
         }
-        if(/^(?=.*[@#$%^&!])/.test(Password)){
+        if (/^(?=.*[@#$%^&!])/.test(Password)) {
             return setRegisterErrorMessage(" don't have a special character")
         }
-        createUser(Email,Password)
-            .then(result =>{
+        createUser(Email, Password)
+            .then(result => {
                 const user = result.user;
                 console.log(user);
+                profile(Name, Photo)
+                    .then(result => {
+                        const user = result.user;
+                    })
+                    .catch(error => {
+                        const errorCode = error.code;
+                        console.log(errorCode);
+                    })
                 setRegisterSuccessMessage("User Successfully logged in ");
                 navigate("/")
 
             })
-            .catch(error =>{
+            .catch(error => {
                 setRegisterErrorMessage(error.message)
             })
+
     }
     const socialLoginWith = (googleLogIn) => {
         setRegisterSuccessMessage("");

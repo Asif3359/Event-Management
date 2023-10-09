@@ -6,9 +6,9 @@ const AboutUs = () => {
         <div>
             <h1 className='text-center text-4xl font-bold'>About Us</h1>
             <div className='p-4 text-center w-2/3 mx-auto'>
-                <p>XyZ Event - Your Premier Event Management Partner
+                <p>Corporate Nexus Events Event - Your Premier Event Management Partner
 
-                    At XyZ Event, we are passionate about creating unforgettable experiences. With XyZ Event years of experience in the event management industry, we have established ourselves as a trusted partner for individuals and businesses seeking to host extraordinary events.</p>
+                    At Corporate Nexus Events Event, we are passionate about creating unforgettable experiences. With XyZ Event years of experience in the event management industry, we have established ourselves as a trusted partner for individuals and businesses seeking to host extraordinary events.</p>
             </div>
             <div className='flex flex-col lg:flex-row gap-5 justify-between items-center mt-5 p-10 '>
                 <div className='flex-1' data-aos="fade-right">
