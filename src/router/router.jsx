@@ -18,6 +18,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
         {
           path: "/",
           element: <Home></Home>,
+          loader:()=>fetch("/corporateEvents.json")
         },
         {
           path: "/service",

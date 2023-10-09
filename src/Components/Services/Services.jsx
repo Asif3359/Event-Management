@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../../AuthProviders/AuthProvider';
 import Service from '../Service/Service';
 
-const Services = () => {
-    const {services} = useContext(AuthContext);
+const Services = ({services}) => {
+    // console.log(services)
     return (
         <div className='grid  grid-cols-1 md:grid-cols-2  gap-5'>
             {

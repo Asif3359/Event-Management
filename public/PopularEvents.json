@@ -2,7 +2,7 @@
       {
         "id": 1,
         "name": "Corporate Meetings",
-        "img_url": "/src/assets/banner-4.jpg",
+        "img_url": "https://i.ibb.co/5nnFhDv/banner-1.jpg",
         "small_title": "Business Strategy",
         "details": "Corporate meetings are vital gatherings of company executives, departments, or teams to discuss business strategies, goals, and operations. These meetings can be regular sessions or special events for decision-making, planning, and alignment. They provide a platform for sharing insights, setting priorities, and addressing challenges. Corporate meetings enable effective communication and coordination among stakeholders, leading to better decision outcomes and organizational success. Whether held in boardrooms, off-site venues, or virtually, corporate meetings play a crucial role in shaping a company's direction and ensuring everyone is on the same page.",
         "amount": 1200,
@@ -11,7 +11,7 @@
       {
         "id": 2,
         "name": "Award Ceremonies",
-        "img_url": "/src/assets/banner-5.jpeg",
+        "img_url": "https://i.ibb.co/fXV1kCB/banner-2.jpg",
         "small_title": "Recognition",
         "details": "Award ceremonies are special events designed to recognize and honor outstanding achievements and contributions within an organization. Awards may be presented to employees, partners, or other stakeholders who have demonstrated excellence and dedication. These ceremonies celebrate success, inspire motivation, and foster a culture of appreciation. They boost employee morale, encourage healthy competition, and reinforce a sense of belonging. Award ceremonies can be formal affairs or casual gatherings, but they always serve as a powerful tool for acknowledging and appreciating the hard work and dedication of individuals and teams.",
         "amount": 500,
