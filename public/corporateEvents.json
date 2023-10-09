@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Conferences and Seminars",
+    "img_url": "/src/assets/banner-1.jpeg",
+    "small_title": "Knowledge Sharing",
+    "details": "Conferences and seminars are gatherings of professionals for knowledge sharing. These events bring together experts and industry leaders to discuss, present, and exchange ideas. Attendees can expect to engage with keynote speakers, participate in panel discussions, and attend informative workshops. These events are invaluable for staying updated on industry trends and making important connections. Whether it's a large-scale conference or a specialized seminar, these events foster learning, collaboration, and networking in a dynamic environment.",
+    "amount": 1000,
+    "dataAos": "fade-down-right",
+    "location": "Conference Center A",
+    "manager_name":"Abdullah",
+    "mobile":"017xxxxxx",
+    "email":"xyz@gmail.com"  
+  },
+  {
+    "id": 2,
+    "name": "Trade Shows and Expos",
+    "img_url": "/src/assets/banner-1.jpeg",
+    "small_title": "Product Showcase",
+    "details": "Trade shows and expos provide businesses with opportunities to showcase their products and services to a targeted audience. These events serve as platforms for companies to exhibit innovations, launch new products, and build brand visibility. Attendees can explore a wide range of offerings, network with industry professionals, and discover emerging trends. Trade shows and expos foster collaboration and facilitate valuable connections among participants. They play a crucial role in driving business growth, fostering partnerships, and staying competitive in the market.",
+    "amount": 1500,
+    "dataAos": "fade-down-right",
+    "location": "Conference Center B",
+    "manager_name":"Abdullah",
+    "mobile":"017xxxxxx",
+    "email":"xyz@gmail.com"  
+  },
+  {
+    "id": 3,
+    "name": "Team Building Workshops",
+    "img_url": "/src/assets/banner-2.jpeg",
+    "small_title": "Team Bonding",
+    "details": "Team building workshops are designed to strengthen teamwork, communication, and collaboration among employees. These workshops often include outdoor activities, problem-solving exercises, and group challenges. Team members build trust and camaraderie while tackling shared objectives. These workshops enhance problem-solving skills, improve communication, and boost morale. They create a positive workplace culture, increase productivity, and contribute to a motivated and cohesive team. Whether in a corporate setting or as part of a retreat, team building workshops are essential for fostering a harmonious and high-performing team.",
+    "amount": 800,
+    "dataAos": "fade-down-right",
+    "location": "Conference Center C",
+    "manager_name":"Abdullah",
+    "mobile":"017xxxxxx",
+    "email":"xyz@gmail.com"  
+    },
+  {
+    "id": 4,
+    "name": "Product Launches",
+    "img_url": "/src/assets/banner-3.jpeg",
+    "small_title": "New Beginnings",
+    "details": "Product launches are strategic events where new products or services are introduced to the market. These launches often involve marketing campaigns, media coverage, and targeted promotions to create excitement and attract customers. Product launches are critical for generating buzz, increasing brand visibility, and gaining a competitive edge. They provide opportunities for companies to showcase their innovations, highlight key features, and engage with their audience. A successful product launch can lead to increased sales, brand loyalty, and long-term success in the marketplace.",
+    "amount": 2000,
+    "dataAos": "fade-down-right",
+    "location": "Conference Center D",
+    "manager_name":"Abdullah",
+    "mobile":"017xxxxxx",
+    "email":"xyz@gmail.com"  
+  },
+  {
+    "id": 5,
+    "name": "Corporate Meetings",
+    "img_url": "/src/assets/banner-4.jpg",
+    "small_title": "Business Strategy",
+    "details": "Corporate meetings are vital gatherings of company executives, departments, or teams to discuss business strategies, goals, and operations. These meetings can be regular sessions or special events for decision-making, planning, and alignment. They provide a platform for sharing insights, setting priorities, and addressing challenges. Corporate meetings enable effective communication and coordination among stakeholders, leading to better decision outcomes and organizational success. Whether held in boardrooms, off-site venues, or virtually, corporate meetings play a crucial role in shaping a company's direction and ensuring everyone is on the same page.",
+    "amount": 1200,
+    "dataAos": "fade-down-right",
+    "location": "Conference Center E",
+    "manager_name":"Abdullah",
+    "mobile":"017xxxxxx",
+    "email":"xyz@gmail.com"  
+    },
+  {
+    "id": 6,
+    "name": "Award Ceremonies",
+    "img_url": "/src/assets/banner-5.jpeg",
+    "small_title": "Recognition",
+    "details": "Award ceremonies are special events designed to recognize and honor outstanding achievements and contributions within an organization. Awards may be presented to employees, partners, or other stakeholders who have demonstrated excellence and dedication. These ceremonies celebrate success, inspire motivation, and foster a culture of appreciation. They boost employee morale, encourage healthy competition, and reinforce a sense of belonging. Award ceremonies can be formal affairs or casual gatherings, but they always serve as a powerful tool for acknowledging and appreciating the hard work and dedication of individuals and teams.",
+    "amount": 500,
+    "dataAos": "fade-down-right",
+    "location": "Conference Center F",
+    "manager_name":"Abdullah",
+    "mobile":"017xxxxxx",
+    "email":"xyz@gmail.com"  
+  }
+]

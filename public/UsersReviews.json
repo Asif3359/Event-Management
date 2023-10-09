@@ -1,0 +1,31 @@
+[
+    {
+      "title": "Customer 1",
+      "name": "Bonnie Green",
+      "occupation": "Developer at Open AI",
+      "review": "Very easy this was to integrate. If you care for your time, I hands down would go with this.",
+      "profile_picture": "https://example.com/bonnie_profile1.jpg"
+    },
+    {
+      "title": "Customer 2",
+      "name": "John Smith",
+      "occupation": "Software Engineer",
+      "review": "Impressive integration experience. Saves a lot of time!",
+      "profile_picture": "https://example.com/john_profile.jpg"
+    },
+    {
+      "title": "Customer 3",
+      "name": "Sarah Parker",
+      "occupation": "Data Scientist",
+      "review": "Smooth and efficient integration. Highly recommended!",
+      "profile_picture": "https://example.com/sarah_profile.jpg"
+    },
+    {
+      "title": "Customer 4",
+      "name": "Michael Davis",
+      "occupation": "Web Developer",
+      "review": "This integration is a time-saver. Excellent tool!",
+      "profile_picture": "https://example.com/michael_profile.jpg"
+    }
+  ]
+  
