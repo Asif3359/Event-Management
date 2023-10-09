@@ -2,6 +2,7 @@ import { Button } from '@material-tailwind/react';
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../AuthProviders/AuthProvider';
+import swal from 'sweetalert';
 
 const NavBar = () => {
     const [logOutError, setLogOutError] = useState(null);
@@ -9,13 +10,32 @@ const NavBar = () => {
     const { services, user, logOut } = useContext(AuthContext);
 
     const handleSingOut = () => {
-        logOut()
-            .then(result => {
-                setLogOutSuccess("User Log Out Successfully")
-            })
-            .catch(error => {
-                setLogOutError(error.message)
-            })
+
+        swal({
+            title: "Are you sure?",
+            text: "You want to LogOut now!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    swal("LogOut Successfully", {
+                        icon: "success",
+                    });
+                    logOut()
+                        .then(result => {
+                            setLogOutSuccess("User Log Out Successfully")
+                        })
+                        .catch(error => {
+                            setLogOutError(error.message)
+                    })
+                }
+                else {
+                    swal("You are still logged in");
+                }
+            });
+
     }
     const links = <>
         <li><NavLink to="/">Home</NavLink ></li>
