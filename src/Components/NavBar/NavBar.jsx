@@ -42,7 +42,7 @@ const NavBar = () => {
         <li><NavLink to="/service">Service</NavLink ></li>
         <li>
             <details >
-                <summary>Parent</summary>
+                <summary>Events</summary>
                 <ul className='w-56 z-50 right-1 m-0 border-l-0 flex justify-start items-center flex-wrap gap-0 '>
 
                     {
@@ -59,10 +59,10 @@ const NavBar = () => {
         {
             user
             &&
-            <li><NavLink className="rounded-full p-0 m-0 btn btn-circle btn-sm" to="/profile"><button className=''><img className='rounded-full' src={user?.photoURL} alt="" /></button></NavLink ></li>
+            <li><NavLink className="rounded-full p-0 m-0 btn btn-circle btn-sm" to="/profile"><button><img className='rounded-full' src={user?.photoURL} alt="" /></button></NavLink ></li>
         }
         {
-            user ? <li><Link><button onClick={handleSingOut}>logout</button ></Link></li> : <li><NavLink to="/login">login</NavLink ></li>
+            user ? <li><Link onClick={handleSingOut}>logout</Link></li> : <li><NavLink to="/login">login</NavLink ></li>
         }
     </>
     return (
@@ -72,18 +72,18 @@ const NavBar = () => {
                     <li className='list-none'><NavLink to="/">Logo</NavLink></li>
                 </div>
                 <div className="flex-none">
-                    <ul className="menu hidden md:flex items-center  menu-horizontal px-1">
+                    <ul className="menu hidden md:flex items-center justify-center  menu-horizontal px-1">
                         {
                             links
                         }
                     </ul>
-                    <ul className="menu flex md:hidden items-center menu-horizontal px-1">
+                    <ul className="menu flex md:hidden items-center justify-center menu-horizontal px-1">
 
                         <li><NavLink to="/profile">img</NavLink ></li>
                         <li>
                             <details>
                                 <summary>
-                                    Parent
+                                    Menu
                                 </summary>
                                 <ul className="p-2 z-50  right-0">
                                     {
