@@ -1,5 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../AuthProviders/AuthProvider';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import Modal from '@material-ui/core/Modal'
 
 const UpdateInfo = () => {
@@ -23,6 +25,18 @@ const UpdateInfo = () => {
                 console.log(errorCode);
             })
     }
+    const handleToast = () => {
+        toast.success('Your Profile is update Please Refresh', {
+            position: "top-right",
+            autoClose: 1500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        });
+    }
     return (
         <div>
             <div>
@@ -44,12 +58,13 @@ const UpdateInfo = () => {
                             </div>
                             <div className='space-y-2'>
                                 <label htmlFor="photo">Display Name</label>
-                                <input type="url" name='Photo' placeholder='Your Photo url' id='Photo' className=' border-2 rounded-lg px-1 py-2 w-full' />
+                                <input type="url" name='photo' placeholder='Your Photo url' id='Photo' className=' border-2 rounded-lg px-1 py-2 w-full' />
                             </div>
                             <div>
-                                <input className='btn btn-sm btn-primary' type="submit" value="Submit" />
+                                <input onClick={handleToast} className='btn btn-sm btn-primary' type="submit" value="Submit" />
                             </div>
                         </form>
+                        <ToastContainer/>
                     </div>
                 }
             </div>
